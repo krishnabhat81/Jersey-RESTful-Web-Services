@@ -5,9 +5,9 @@
 <web-app>
 	<display-name>Jersey - JAX-RS : Restful web app</display-name>
 
-	<!-- On the server side Jersey provides a servlet implementation which scans predefined classes 
-	to identify RESTful resources. In your web.xml configuration file your register this servlet 
-	for your web application. -->
+	<!-- On the server side Jersey provides a servlet implementation which scans 
+		predefined classes to identify RESTful resources. In your web.xml configuration 
+		file your register this servlet for your web application. -->
 	<servlet>
 		<servlet-name>jersey-jaxrs-serlvet</servlet-name>
 		<servlet-class>
@@ -15,7 +15,11 @@
 		</servlet-class>
 		<init-param>
 			<param-name>jersey.config.server.provider.packages</param-name>
-			<param-value>com.jersey.jaxrs.rest</param-value>
+			<!-- <param-value>com.jersey.jaxrs.rest</param-value> -->
+			<param-value>
+				com.jersey.jaxrs,
+				com.fasterxml.jackson.jaxrs.json
+			</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
