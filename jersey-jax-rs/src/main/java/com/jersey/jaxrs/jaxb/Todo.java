@@ -9,7 +9,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 */
 
 /*
- * Domain class e.g. Todo.class
+ * This is domain class [ Todo.class ]
  */
 
 @XmlRootElement

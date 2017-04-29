@@ -19,7 +19,7 @@ import com.jersey.jaxrs.jaxb.JacksonFeature;
 public class TodoTest {
 
 	public static void main(String[] args) {
-		ClientConfig config = new ClientConfig().register(JacksonFeature.class);
+		ClientConfig config = new ClientConfig(); //.register(JacksonFeature.class); // it works fine
 		Client client = ClientBuilder.newClient(config);
 
 		WebTarget target = client.target(getBaseURI());
@@ -42,7 +42,7 @@ public class TodoTest {
 		// ClientConfig().register(JacksonFeature.class);
 		// Get JSON for application
 		
-		//NOTE: I get error and fixed from this link:
+		//NOTE: I got an error and fixed from this link:
 		//http://stackoverflow.com/questions/29136404/severe-messagebodywriter-not-found-for-media-type-application-json-type-class
 		
 		String jsonAppResponse = target.path("rest").path("todo_jackson").request().accept(MediaType.APPLICATION_JSON)
