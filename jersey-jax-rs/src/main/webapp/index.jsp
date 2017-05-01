@@ -1,6 +1,6 @@
 <html>
 <body>
-	<h2>RESTful web services with Java (Jersey / JAX-RS)</h2>
+	<h2>RESTful web services with Java (JAX-RS Example Jersey)</h2>
 	<h3>
 		RESTful web services in Java with the JAX-RS reference implementation Jersey. 
 		<br />

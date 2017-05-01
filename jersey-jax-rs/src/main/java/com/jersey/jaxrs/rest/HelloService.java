@@ -15,6 +15,7 @@ import javax.ws.rs.core.Response;
 // The browser requests per default the HTML MIME type.
 
 // Sets the path to base URL + /hello
+
 @Path("/hello")
 public class HelloService {
 	@GET
