@@ -9,8 +9,13 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.ResponseBuilder;
 
 /**
-* @author Krishna Bhat
-*
+* 	@author Krishna Bhat
+* 
+*	@Produces("text/plain"): for downloading text file.
+*	@Produces("image/png"): for downloading png image file.
+*	@Produces("application/pdf"): for downloading PDF file.
+*	@Produces("application/vnd.ms-excel"): for downloading excel file.
+*	@Produces("application/msword"): for downloading ms word file.
 */
 
 @Path("/files")

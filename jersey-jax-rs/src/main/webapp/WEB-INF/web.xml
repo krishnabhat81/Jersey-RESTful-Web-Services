@@ -21,6 +21,14 @@
 				com.fasterxml.jackson.jaxrs.json
 			</param-value>
 		</init-param>
+
+		<!-- File upload -->
+		<init-param>
+			<param-name>jersey.config.server.provider.classnames</param-name>
+			<param-value>org.glassfish.jersey.filter.LoggingFilter;
+				org.glassfish.jersey.media.multipart.MultiPartFeature</param-value>
+		</init-param>
+
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
@@ -28,4 +36,5 @@
 		<servlet-name>jersey-jaxrs-serlvet</servlet-name>
 		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
+
 </web-app>

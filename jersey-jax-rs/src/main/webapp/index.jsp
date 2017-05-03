@@ -27,5 +27,9 @@
 	<a href="rest/files/txt">Download Text File</a> <br />
 	<a href="rest/files/image">Download Image File</a> <br />
 	<a href="rest/files/pdf">Download PDF File</a> <br />
+	
+	<hr />
+	<h1>Upload File</h1>
+	<a href="file_upload.html">Upload File</a> <br />
 </body>
 </html>
