@@ -23,7 +23,9 @@
 	<a href="rest/product">Goto form first</a>
 	
 	<hr />
-	
-	<a href="rest/files/txt">Download Text File</a> 
+	<h1>Download Files</h1>
+	<a href="rest/files/txt">Download Text File</a> <br />
+	<a href="rest/files/image">Download Image File</a> <br />
+	<a href="rest/files/pdf">Download PDF File</a> <br />
 </body>
 </html>
