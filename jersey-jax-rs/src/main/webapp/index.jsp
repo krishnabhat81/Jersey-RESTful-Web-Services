@@ -21,5 +21,9 @@
 	
 	<h1>JAX-RS @FormParam and @POST Annotation:</h1>
 	<a href="rest/product">Goto form first</a>
+	
+	<hr />
+	
+	<a href="rest/files/txt">Download Text File</a> 
 </body>
 </html>
